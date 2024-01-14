@@ -1,0 +1,32 @@
+#include <stdio.h>
+// making a guess number game
+int main()
+{
+    printf("Hello World\n");
+    int n;
+    printf("enter the number ");
+    scanf("%d",&n);
+    int sum=1;
+   int a=1234;
+  while(n!=a){
+      if(n>a){
+          printf("your guess is higher\n");
+      }
+      
+      else{
+          printf("your guess is lower\n");
+      }
+      scanf("%d",&n);
+     sum++;
+  }
+    
+   
+   if(n==a){
+       printf("your quess is correct\n");
+   } 
+    
+  printf("you quess %d times",sum); 
+    
+
+    return 0;
+}
